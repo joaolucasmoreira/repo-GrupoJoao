@@ -32,7 +32,7 @@ nav {
     gap: 30px;
 }
 
-nav a {
+header a {
     text-decoration: none;
     color: #eaeaea;
     font-weight: bold;
@@ -40,12 +40,12 @@ nav a {
     position: relative;
 }
 
-nav a.active,
-nav a:hover {
+header a.active,
+header a:hover {
     color: #f32d2d;
 }
 
-nav a.active::after {
+header a.active::after {
     content: "";
     display: absolute;
     width: 100%;
