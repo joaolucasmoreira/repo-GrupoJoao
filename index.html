@@ -5,7 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora de Custo Benefício</title>
+    <!-- 1- RESET CSS AO INICIO -->
     <link rel="stylesheet" href="reset.css">
+    <!-- 2- Ferramentas (Frameworks) CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <!-- 3- Nosso CSS personalizado   -->
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -22,15 +26,15 @@
     <main>
         <div>
 
-            <h1>Custo Benefício</h1>
-            <form id="calc-form">
-                <label for="preco-unitario">Preço Unitário:</label>
-                <input type="number" id="preco-unitario" required>
-                <label for="quantidade">Quantidade:</label>
-                <input type="number" id="quantidade" required>
-                <label for="desconto">Desconto (%):</label>
-                <input type="number" id="desconto" required>
-                <button id="btnCalc">Calcular</button>
+            <h1 class="h1">Calculadora de Desconto</h1>
+            <form id="calc-form" class="form-control bg-dark text-secondary display-6">
+                <label class="form-label" for="preco-unitario">Preço Unitário:</label>
+                <input type="number" class="form-control border-secondary" id="preco-unitario" required>
+                <label class="form-label" for="quantidade">Quantidade:</label>
+                <input type="number" class="form-control border-secondary" id="quantidade" required>
+                <label class="form-label" for="desconto">Desconto (%):</label>
+                <input type="number" class="form-control border-secondary" id="desconto" required>
+                <button id="btnCalc" class="btn btn-light">Calcular</button>
             </form>
         </div>
     </main>
@@ -40,6 +44,7 @@
     <footer>
 
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
     <script type="module" src="./script.js"></script>
 </body>
 
