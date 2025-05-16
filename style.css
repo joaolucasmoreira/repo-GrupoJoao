@@ -97,8 +97,8 @@ main h1 {
 #calc-form {
     display: flex;
     flex-direction: column;
-    gap: 25px;
-    font-size: 18px;
+    gap: 20px;
+    /* font-size: 18px; */
 }
 
 #calc-form label {
