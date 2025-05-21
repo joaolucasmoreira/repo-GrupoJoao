@@ -1,0 +1,45 @@
+<!-- desconto.html -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calc. Desconto – Calculadoras</title>
+  <link rel="stylesheet" href="src/css/style.css">
+</head>
+<body data-page="desconto">
+  <header class="site-header">
+    <div class="container">
+      <a class="logo" href="index.html">Calculadoras</a>
+      <nav class="site-nav" role="navigation" aria-label="Menu principal">
+        <ul class="nav-list">
+          <li><a href="desconto.html" class="nav-link" data-page="desconto">Calc. Desconto</a></li>
+          <li><a href="#" class="nav-link">Novo item</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container main-content">
+    <h1 class="title">Calculadora de Desconto</h1>
+    <form id="calc-form">
+      <div class="campo-entrada">
+        <label for="preco-unitario">Preço unitário</label>
+        <input id="preco-unitario" type="number" step="0.01" required>
+      </div>
+      <div class="campo-entrada">
+        <label for="quantidade">Quantidade</label>
+        <input id="quantidade" type="number" required>
+      </div>
+      <div class="campo-entrada">
+        <label for="desconto">Desconto (%)</label>
+        <input id="desconto" type="number" step="0.1" required>
+      </div>
+      <button type="submit" class="btn">Calcular</button>
+    </form>
+    <div id="result-desconto" aria-live="polite"></div>
+  </main>
+
+  <script src="src/js/main.js" defer></script>
+</body>
+</html>
