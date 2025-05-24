@@ -15,11 +15,19 @@
             <nav class="site-nav" role="navigation" aria-label="Menu principal">
                 <ul class="nav-list">
                     <li><a href="fisica.html" class="nav-link" data-page="fisica">Calc. Física</a></li>
+                    <li><a href="#" id="menu-fisica" class="nav-link">Menu</a></li>
                     <li><a href="index.html" class="nav-link">Início</a></li>
                 </ul>
             </nav>
         </div>
+        <select id="menu-select" style="display: none; position: absolute;">
+            <option value="opcao1">Opção 1</option>
+            <option value="opcao2">Opção 2</option>
+            <option value="opcao3">Opção 3</option>
+        </select>
     </header>
+
+
 
     <main class="main-content container">
         <!-- Esses links que vão referenciar para as páginas html que serão feitas -->
@@ -34,6 +42,17 @@
     </main>
 
     <script src="./js/common.js" defer></script>
+    <script>
+        const menuFisica = document.getElementById('menu-fisica')
+        const menuSelect = document.getElementById('menu-select')
+
+        menuFisica.addEventListener('click', (e)=> {
+            e.preventDefault
+            if (menuSelect) {
+                
+            }
+        })
+    </script>
 </body>
 
 </html>
