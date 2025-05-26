@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cálculos Físicos</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body data-page="fisica">
+    <header class="site-header">
+        <div class="container">
+            <a class="logo" href="fisica.html">Calculadora Física</a>
+            <nav class="site-nav" role="navigation" aria-label="Menu principal">
+                <ul class="nav-list">
+                    <li><a href="fisica.html" class="nav-link" data-page="fisica">Calc. Física</a></li>
+                    <li><a href="#" id="menu-fisica" class="nav-link">Menu</a></li>
+                    <li><a href="index.html" class="nav-link">Início</a></li>
+                </ul>
+            </nav>
+        </div>
+        <select id="menu-select" style="display: none; position: absolute;">
+            <option value="opcao1">Opção 1</option>
+            <option value="opcao2">Opção 2</option>
+            <option value="opcao3">Opção 3</option>
+        </select>
+    </header>
+
+
+
+    <main class="main-content container">
+        <!-- Esses links que vão referenciar para as páginas html que serão feitas -->
+        <!-- Lembrar de utilizar o padrão que o professor usou na página de desconto.html, é a melhor referência -->
+        <ul class="menu-list">
+            <li><a href="#" class="menu-link">Força Elétrica e Potencial Elétrico</a></li>
+            <li><a href="#" class="menu-link">Força e Aceleração</a></li>
+            <li><a href="#" class="menu-link">Velocidade e Distância</a></li>
+            <li><a href="#" class="menu-link">Trabalho e Potência</a></li>
+            <li><a href="#" class="menu-link">Lei de Ohm e Potencial Elétrico</a></li>
+        </ul>
+    </main>
+
+    <script src="./js/common.js" defer></script>
+    <script>
+        const menuFisica = document.getElementById('menu-fisica')
+        const menuSelect = document.getElementById('menu-select')
+
+        menuFisica.addEventListener('click', (e)=> {
+            e.preventDefault
+            if (menuSelect) {
+                
+            }
+        })
+    </script>
+</body>
+
+</html>
