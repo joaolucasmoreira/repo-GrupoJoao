@@ -171,7 +171,7 @@ body {
 /* RESPONSIVO */
 @media (max-width: 600px) {
   .container { width: 95%; }
-  .menu-list { grid-template-columns: 1fr; }
+  .menu-list { grid-template-columns: 1fr;}
 }
 
  .escondido {

@@ -20,12 +20,17 @@
                 </ul>
             </nav>
         </div>
-        <select id="menu-select" style="display: none; position: absolute;">
-            <option value="opcao1">Opção 1</option>
-            <option value="opcao2">Opção 2</option>
-            <option value="opcao3">Opção 3</option>
-        </select>
     </header>
+
+    <div id="menu-select" class="escondido">
+        <ul class="menu-list">
+            <li><a href="#" class="menu-link">Força Elétrica...</a></li>
+            <li><a href="#" class="menu-link">Força/Aceleração</a></li>
+            <li><a href="#" class="menu-link">Velocidade/Distância</a></li>
+            <li><a href="#" class="menu-link">Trabalho/Potência</a></li>
+            <li><a href="#" class="menu-link">Lei de Ohm...</a></li>
+        </ul>
+    </div>
 
 
 
@@ -45,13 +50,29 @@
     <script>
         const menuFisica = document.getElementById('menu-fisica')
         const menuSelect = document.getElementById('menu-select')
+        const rect = menuFisica.getBoundingClientRect();
 
-        menuFisica.addEventListener('click', (e)=> {
-            e.preventDefault
-            if (menuSelect) {
-                
+        menuFisica.addEventListener('click', (e) => {
+            e.preventDefault()
+            if (getComputedStyle(menuSelect).display === 'none') {
+                menuSelect.classList.remove('escondido')
+                menuSelect.classList.add('visivel')
+                menuSelect.style.position = 'absolute';
+                menuSelect.style.top = rect.bottom + 30 + 'px';
+                menuSelect.style.left = rect.left - 70 + 'px';
+            } else {
+                menuSelect.classList.remove('visivel')
+                menuSelect.classList.add('escondido')
             }
         })
+
+        document.addEventListener('click', function (e) {
+            if (!menuSelect.contains(e.target) && !menuFisica.contains(e.target)) {
+                menuSelect.classList.remove('visivel')
+                menuSelect.classList.add('escondido')
+            }
+        });
+
     </script>
 </body>
 
