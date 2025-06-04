@@ -153,12 +153,12 @@ body {
 }
 
 /* RESULTADOS */
-#result-desconto{
+#result-desconto, #result-combustivel{
   margin: 1rem auto;
   padding: 0.5rem auto;
 
 }
-#result-desconto span {
+#result-desconto span, #result-combustivel span{
   font-size: 1.5rem;
   text-align: center;
   border: 1px solid var(--color-accent);
