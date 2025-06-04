@@ -1,8 +1,23 @@
 #result{
   margin: 1rem auto;
   padding: 0.5rem auto;
-
 }
+
+#result-forca{
+  margin: 1rem auto;
+  padding: 0.5rem auto;
+}
+
+#result-velocidade,
+#result-distancia {
+  margin: 1rem auto;
+  padding: 0.5rem;
+  text-align: center;
+}
+
+#result-velocidade span,
+#result-distancia span,
+#result-forca span,
 #result span {
   font-size: 1.5rem;
   text-align: center;
@@ -12,3 +27,4 @@
   color: var(--color-accent);
   width: fit-content;
 }
+
