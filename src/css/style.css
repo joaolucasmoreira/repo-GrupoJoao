@@ -8,7 +8,9 @@
   --color-button-hover: #7080C0;
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -31,6 +33,7 @@ body {
 .site-header {
   background: var(--color-header);
 }
+
 .site-header .container {
   display: flex;
   justify-content: space-between;
@@ -83,7 +86,7 @@ body {
   margin: 50px auto;
 }
 
-.main-content .title{
+.main-content .title {
   text-align: center;
 }
 
@@ -91,7 +94,7 @@ body {
 .menu-list {
   list-style: none;
   display: grid;
-  grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   gap: 1rem;
 }
 
@@ -104,8 +107,9 @@ body {
   border-radius: 4px;
   text-align: center;
   font-weight: bold;
-  transition: background .3s, color .3s;
+  transition: color .3s;
 }
+
 .menu-link:hover {
   background: var(--color-bg);
   color: var(--color-text);
@@ -146,27 +150,29 @@ body {
   font-size: 1rem;
   cursor: pointer;
   align-self: flex-start;
-  transition: background .3s;
+
 }
+
 .btn:hover {
   background: var(--color-button-hover);
 }
 
- .escondido {
-    display: none;
-  }
+.escondido {
+  display: none;
+}
 
-  .visivel {
-    display: block;
-  }
+.visivel {
+  display: block;
+}
 
 /* RESULTADOS */
-#result-desconto, #result-combustivel{
+#result-combustivel,
+#result-desconto {
   margin: 1rem auto;
   padding: 0.5rem auto;
-
 }
-#result-desconto span, #result-combustivel span{
+
+#result-desconto span, #result-combustivel span {
   font-size: 1.5rem;
   text-align: center;
   border: 1px solid var(--color-accent);
@@ -183,7 +189,7 @@ body {
 #menu-select ul {
   list-style: none;
   display: grid;
-  grid-template-columns: repeat(auto-fill,minmax(150px,1fr));
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
   gap: 0.6rem;
   text-align: center;
 }
@@ -196,7 +202,7 @@ body {
   padding: 0.5rem;
   border-radius: 4px;
   font-weight: bold;
-  transition: background .3s, color .3s;
+  transition: color .3s;
   font-size: 13px;
 }
 
@@ -207,10 +213,15 @@ body {
 
 /* RESPONSIVO */
 @media (max-width: 600px) {
-  .container { width: 95%; }
-  .menu-list { grid-template-columns: 1fr;}
-  #menu-select ul { grid-template-columns: 1fr;}
+  .container {
+    width: 95%;
+  }
+
+  .menu-list {
+    grid-template-columns: 1fr;
+  }
+
+  #menu-select ul {
+    grid-template-columns: 1fr;
+  }
 }
-
-
-
