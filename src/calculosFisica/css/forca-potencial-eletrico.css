@@ -1,0 +1,10 @@
+img {
+    max-width: 4    00px;
+    max-height: 300px;
+    padding-top: 30px;
+}
+
+.imagens {
+    display: flex;
+    gap: 1rem;
+}
