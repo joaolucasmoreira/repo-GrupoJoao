@@ -152,6 +152,14 @@ body {
   background: var(--color-button-hover);
 }
 
+ .escondido {
+    display: none;
+  }
+
+  .visivel {
+    display: block;
+  }
+
 /* RESULTADOS */
 #result-desconto, #result-combustivel{
   margin: 1rem auto;
@@ -168,17 +176,41 @@ body {
   width: fit-content;
 }
 
+#menu-select {
+  width: 100px;
+}
+
+#menu-select ul {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fill,minmax(150px,1fr));
+  gap: 0.6rem;
+  text-align: center;
+}
+
+#menu-select a {
+  display: block;
+  text-decoration: none;
+  background: var(--color-text);
+  color: var(--color-bg);
+  padding: 0.5rem;
+  border-radius: 4px;
+  font-weight: bold;
+  transition: background .3s, color .3s;
+  font-size: 13px;
+}
+
+#menu-select a:hover {
+  background: var(--color-bg);
+  color: var(--color-text);
+}
+
 /* RESPONSIVO */
 @media (max-width: 600px) {
   .container { width: 95%; }
-  .menu-list { grid-template-columns: 1fr; }
+  .menu-list { grid-template-columns: 1fr;}
+  #menu-select ul { grid-template-columns: 1fr;}
 }
 
- .escondido {
-    display: none;
-  }
 
-  .visivel {
-    display: block;
-  }
 
