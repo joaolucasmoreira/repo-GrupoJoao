@@ -1,6 +1,16 @@
-#result{
+#result-Ohm, #result{
   margin: 1rem auto;
   padding: 0.5rem auto;
+}
+
+#result-Ohm span {
+  font-size: 1.5rem;
+  text-align: center;
+  border: 1px solid color(rgb(46, 128, 229));
+  padding: 1rem;
+  border-radius: 4px;
+  color: color(rgb(46, 128, 229));
+  width: fit-content;
 }
 
 #result-forca{
@@ -27,4 +37,3 @@
   color: var(--color-accent);
   width: fit-content;
 }
-

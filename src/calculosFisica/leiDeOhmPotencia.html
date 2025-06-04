@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calc. Desconto – Calculadoras</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body data-page="leiDeOhmPotencia">
+  <header class="site-header">
+        <div class="container">
+            <a class="logo" href="../fisica.html">Calculadora Física</a>
+            <nav class="site-nav" role="navigation" aria-label="Menu principal">
+                <ul class="nav-list">
+                    <li><a href="leiDeOhmPotencia.html" class="nav-link" data-page="leiDeOhmPotencia">Lei de Ohm</a></li>
+                    <li><a href="#" id="menu-fisica" class="nav-link">Menu</a></li>
+                    <li><a href="../index.html" class="nav-link">Início</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+    <div id="menu-select" class="escondido">
+        <ul>
+            <li><a href="#" class="menu-link">Força Elétrica...</a></li>
+            <li><a href="#" class="menu-link">Força/Aceleração</a></li>
+            <li><a href="#" class="menu-link">Velocidade/Distância</a></li>
+            <li><a href="#" class="menu-link">Trabalho/Potência</a></li>
+            <li><a href="leiDeOhmPotencia.html" class="menu-link">Lei de Ohm...</a></li>
+        </ul>
+    </div>
+
+  <main class="container main-content">
+    <h1 class="title">Lei de Ohm e Potência Elétrica</h1>
+    <form id="calc-form">
+      <div class="campo-entrada">
+        <label for="preco-unitario">Tensão</label>
+        <input id="tensao" type="number" step="0.01" required>
+      </div>
+      <div class="campo-entrada">
+        <label for="quantidade">Corrente</label>
+        <input id="corrente" type="number" required>
+      </div>
+      <div class="campo-entrada">
+        <label for="desconto">Resistência</label>
+        <input id="resistencia" type="number" step="0.1" required>
+      </div>
+      <button onclick="calcular()" class="btn">Calcular</button>
+    </form>
+    <div id="result-Ohm" aria-live="polite"></div>
+  </main>
+  <script src="../js/common.js" defer></script>
+  <script src="./js/leideohm.js" defer></script>
+</body>
+
+</html>
