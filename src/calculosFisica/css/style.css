@@ -1,8 +1,17 @@
 #result-forca{
   margin: 1rem auto;
   padding: 0.5rem auto;
-
 }
+
+#result-velocidade,
+#result-distancia {
+  margin: 1rem auto;
+  padding: 0.5rem;
+  text-align: center;
+}
+
+#result-velocidade span,
+#result-distancia span,
 #result-forca span {
   font-size: 1.5rem;
   text-align: center;
@@ -11,4 +20,5 @@
   border-radius: 4px;
   color: var(--color-accent);
   width: fit-content;
+  display: inline-block;
 }
