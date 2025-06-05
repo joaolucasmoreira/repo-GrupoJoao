@@ -1,6 +1,6 @@
 /* src/css/style.css */
 :root {
-    --color-bg: #07073e;
+    --color-bg: #1D246B;
     --color-header: #39306c;
     --color-text: #EDEAEA;
     --color-primary: #6272A4;
@@ -84,7 +84,7 @@ body {
     flex-direction: column;
     align-items: center;
     padding: 2rem 0;
-    margin: 50px auto;
+    margin: 70px auto;
 }
 
 .main-content .title {
@@ -104,7 +104,7 @@ body {
     text-decoration: none;
     background: var(--color-text);
     color: var(--color-bg);
-    padding: 1rem;
+    padding: 1.5rem;
     border-radius: 4px;
     text-align: center;
     font-weight: bold;
@@ -143,7 +143,7 @@ body {
 
 /* BOTÕES */
 .btn {
-    padding: 0.75rem 1.5rem;
+    padding: 0.75rem 1.50rem;
     background: var(--color-primary);
     color: var(--color-text);
     border: none;
@@ -184,13 +184,13 @@ body {
 }
 
 #menu-select {
-    width: 100px;
+    width: 200px;
 }
 
 #menu-select ul {
     list-style: none;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 0.6rem;
     text-align: center;
 }
