@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
       menuSelect.classList.add("visivel");
       menuSelect.style.position = "absolute";
       menuSelect.style.top = rect.bottom + 30 + "px";
-      menuSelect.style.left = rect.left - 65 + "px";
+      menuSelect.style.left = rect.left - 42 + "px";
     } else {
       menuSelect.classList.remove("visivel");
       menuSelect.classList.add("escondido");
