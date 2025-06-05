@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculo de IMC</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body data-page="imc">
+    <header class="site-header">
+        <div class="container">
+            <a class="logo" href="./index.html">Calculadora IMC</a>
+            <nav class="site-nav" role="navigation" aria-label="Menu principal">
+                <ul class="nav-list">
+                    <li><a href="calculo-imc.html" class="nav-link" data-page="imc">Calc. IMC</a></li>
+                    <li><a href="#" id="menu-fisica" class="nav-link">Menu</a></li>
+                    <li><a href="index.html" class="nav-link">Início</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div id="menu-select" class="escondido">
+        <ul>
+            <!-- Lembrar de colocar os mesmos links colocados no ul abaixo aqui também! -->
+            <li><a href="./desconto.html" class="men-link">Calc. Desconto</a></li>
+            <li><a href="#" class="menu-link">Custo Combustível</a></li>
+            <li><a href="#" class="menu-link">Custo Medida</a></li>
+            <li><a href="./fisica.html" class="menu-link">Fórmulas Física</a></li>
+            <li><a href="#" class="menu-link">Conversor Unidades</a></li>
+            <li><a href="#" class="menu-link">Conversor Moedas</a></li>
+            <li><a href="./calculo-imc.html" class="menu-link">Cálculo IMC</a></li>
+        </ul>
+    </div>
+
+    <main class="container main-content">
+        <h1 class="title">Calculadora de IMC</h1>
+        <form id="calc-form">
+            <div class="campo-entrada">
+                <label for="preco-unitario">Peso</label>
+                <input id="peso" type="number" step="0.01" required>
+            </div>
+            <div class="campo-entrada">
+                <label for="preco-unitario">Altura</label>
+                <input id="altura" type="number" step="0.01" required>
+            </div>
+            <button id="btnCalculo" onclick="calcular">calcular IMC</button>
+        </form>
+        <div id="result-desconto"></div>
+    </main>
+    <script src="./js/calculo-imc.js" defer></script>
+    <script src="./js/common.js"></script>
+</body>
+
+</html>

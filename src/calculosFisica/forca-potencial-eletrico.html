@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORÇA ELÉTRICA E POTENCIAL ELÉTRICO</title>
+    <link rel="stylesheet" href="./../css/style.css">
+    <link rel="stylesheet" href="./css/forca-potencial-eletrico.css">
+</head>
+
+<body data-page="fisicaE">
+    <header class="site-header">
+        <div class="container">
+            <a class="logo" href="./../fisica.html">Calculadora Física</a>
+            <nav class="site-nav" role="navigation" aria-label="Menu principal">
+                <ul class="nav-list">
+                    <li><a href="./../fisica.html" class="nav-link" data-page="fisicaE">Calc. Fet</a></li>
+                    <li><a href="#" id="menu-fisica" class="nav-link">Menu</a></li>
+                    <li><a href="./../index.html" class="nav-link">Início</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div id="menu-select" class="escondido">
+        <ul>
+            <!-- Lembrar de colocar os mesmos links colocados no ul abaixo aqui também! -->
+            <li><a href="./forca-potencial-eletrico.html" class="menu-link">Força Elétrica...</a></li>
+            <li><a href="#" class="menu-link">Força/Aceleração</a></li>
+            <li><a href="#" class="menu-link">Velocidade/Distância</a></li>
+            <li><a href="#" class="menu-link">Trabalho/Potência</a></li>
+            <li><a href="#" class="menu-link">Lei de Ohm...</a></li>
+        </ul>
+    </div>
+
+    <main class="container main-content">
+        <h1 class="title">Calculadora de Força elétrica e Energia Potencial elétrica</h1>
+        <div class="imagens">
+        <img src="https://media.brainly.com.br/image/rs:fill/w:1200/q:75/plain/https://pt-static.z-dn.net/files/d37/8ef38758ea2b2799a1c98087a9910801.jpg" alt="">
+        <img src="https://slideplayer.com.br/slide/13380470/80/images/2/Energia+potencial+el%C3%A9trica.jpg" alt="">
+        </div>
+        <form id="calc-form">
+            <div class="campo-entrada">
+                <label for="carga-1">Valor da primeira carga</label>
+                <input id="input-carga-1" type="number" step="0.01" required>
+            </div>
+            <div class="campo-entrada">
+                <label for="carga-2">Valor da segunda carga</label>
+                <input id="input-carga-2" type="number" step="0.01" required>
+            </div>
+            <div class="campo-entrada">
+                <label for="distancia">Distância (em metros)</label>
+                <input id="input-distancia" type="number" step="0.01" required>
+            </div>
+            <button id="btnCalculoForca" onclick="calcular">calcular força</button>
+        </form>
+        <div id="result-desconto"></div>
+    </main>
+    <script src="./js/forca-potencial-eletrico.js"></script>
+    <script src="./../js/common.js"></script>
+</body>
+
+</html>
