@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calc. Velocidade e Distância – Calculadora Física</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body data-page="velocidadeDistancia">
+  <header class="site-header">
+    <div class="container">
+      <a class="logo" href="../fisica.html">Calculadora Física</a>
+      <nav class="site-nav" role="navigation" aria-label="Menu principal">
+        <ul class="nav-list">
+          <li><a href="velocidadeDistancia.html" class="nav-link" data-page="velocidadeDistancia">Velocidade e Distância</a></li>
+          <li><a href="#" id="menu-fisica" class="nav-link">Menu</a></li>
+          <li><a href="../index.html" class="nav-link">Início</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div id="menu-select" class="escondido">
+        <ul>
+            <!-- Lembrar de colocar os mesmos links colocados no ul abaixo aqui também! -->
+            <li><a href="#" class="menu-link">Força Elétrica...</a></li>
+            <li><a href="./forcaAcelaracao.html" class="menu-link">Força/Aceleração</a></li>
+            <li><a href="./trabalhoPotencia.html" class="menu-link">Trabalho/Potência</a></li>
+            <li><a href="./leiDeOhmPotencia.html" class="menu-link">Lei de Ohm...</a></li>
+        </ul>
+    </div>
+
+  <main class="container main-content">
+    <h1 class="title">Calculadora de Velocidade e Distância</h1>
+    <form id="calc-form">
+        <h1>Calcular Velocidade</h1>
+        <div class="campo-entrada">
+          <label for="distancia-v">Distância (km)</label>
+          <input id="distancia-v" type="number" step="0.01" required>
+        </div>
+        <div class="campo-entrada">
+          <label for="tempo-v">Tempo (h)</label>
+          <input id="tempo-v" type="number" step="0.01" required>
+        </div>
+        <button type="button" class="btn" id="btn-velocidade">Calcular Velocidade</button>
+        <div id="result-velocidade" aria-live="polite"></div>
+    
+        <h1>Calcular Distância</h1>
+        <div class="campo-entrada">
+          <label for="velocidade-d">Velocidade (km/h)</label>
+          <input id="velocidade-d" type="number" step="0.01" required>
+        </div>
+        <div class="campo-entrada">
+          <label for="tempo-d">Tempo (h)</label>
+          <input id="tempo-d" type="number" step="0.01" required>
+        </div>
+        <button type="button" class="btn" id="btn-distancia">Calcular Distância</button>
+    </form>
+    <div id="result-distancia" aria-live="polite"></div>
+  </main>
+
+  <script src="./js/veldist.js" defer></script>
+  <script src="../js/common.js" defer></script>
+</body>
+
+</html>

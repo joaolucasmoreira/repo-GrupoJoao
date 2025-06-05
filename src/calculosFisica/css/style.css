@@ -1,0 +1,39 @@
+#result-Ohm, #result{
+  margin: 1rem auto;
+  padding: 0.5rem auto;
+}
+
+#result-Ohm span {
+  font-size: 1.5rem;
+  text-align: center;
+  border: 1px solid color(rgb(46, 128, 229));
+  padding: 1rem;
+  border-radius: 4px;
+  color: color(rgb(46, 128, 229));
+  width: fit-content;
+}
+
+#result-forca{
+  margin: 1rem auto;
+  padding: 0.5rem auto;
+}
+
+#result-velocidade,
+#result-distancia {
+  margin: 1rem auto;
+  padding: 0.5rem;
+  text-align: center;
+}
+
+#result-velocidade span,
+#result-distancia span,
+#result-forca span,
+#result span {
+  font-size: 1.5rem;
+  text-align: center;
+  border: 1px solid var(--color-accent);
+  padding: 1rem;
+  border-radius: 4px;
+  color: var(--color-accent);
+  width: fit-content;
+}

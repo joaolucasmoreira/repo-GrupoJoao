@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calc. Trabalho e Potência – Calculadora Física</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body data-page="trabalhoPotencia">
+    <header class="site-header">
+        <div class="container">
+            <a class="logo" href="../fisica.html">Calculadora Física</a>
+            <nav class="site-nav" role="navigation" aria-label="Menu principal">
+                <ul class="nav-list">
+                    <li><a href="trabalhoPotencia.html" class="nav-link" data-page="trabalhoPotencia">Calc. Trabalho e Potência</a></li>
+                    <li><a href="#" id="menu-fisica" class="nav-link">Menu</a></li>
+                    <li><a href="../index.html" class="nav-link">Início</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div id="menu-select" class="escondido">
+        <ul>
+            <!-- Lembrar de colocar os mesmos links colocados no ul abaixo aqui também! -->
+            <li><a href="#" class="menu-link">Força Elétrica...</a></li>
+            <li><a href="./forcaAcelaracao.html" class="menu-link">Força/Aceleração</a></li>
+            <li><a href="./velocidadeDistancia.html" class="menu-link">Velocidade/Distância</a></li>
+            <li><a href="./leiDeOhmPotencia.html" class="menu-link">Lei de Ohm...</a></li>
+        </ul>
+    </div>
+
+    <main class="container main-content">
+        <h1 class="title">Calculadora de Trabalho e Potência</h1>
+        <form id="calc-form">
+            <div class="campo-entrada">
+                <label for="forca">Força</label>
+                <input id="forca" type="number" step="0.01" required>
+            </div>
+            <div class="campo-entrada">
+                <label for="deslocamento">Deslocamento</label>
+                <input id="deslocamento" type="number" required>
+            </div>
+            <div class="campo-entrada">
+                <label for="cosseno">cos(θ) (Ângulo entre a força e o deslocamento)</label>
+                <input id="cosseno" type="number" step="0.1" required>
+            </div>
+            <button type="submit" class="btn">Calcular</button>
+        </form>
+        <div id="result" aria-live="polite"></div>
+    </main>
+
+    <script src="../js/common.js" defer></script>
+    <script src="./js/trabalhoPotencia.js" defer></script>
+</body>
+
+</html>

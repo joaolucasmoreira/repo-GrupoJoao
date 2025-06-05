@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calc. custo de combustivel - Calculadoras</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body data-page="combustivel">
+
+      <header class="site-header">
+    <div class="container">
+      <a class="logo" href="index.html">Calculadoras</a>
+      <nav class="site-nav" role="navigation" aria-label="Menu principal">
+        <ul class="nav-list">
+          <li><a href="combustivel.html" class="nav-link" data-page="combustivel">Combustivel</a></li>
+          <li><a href="#" id="menu-fisica" class="nav-link">Menu</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+    <div id="menu-select" class="escondido">
+        <ul>
+            <!-- Lembrar de colocar os mesmos links colocados no ul abaixo aqui também! -->
+            <li><a href="desconto.html" class="menu-link">Calc. Desconto</a></li>
+            <li><a href="#" class="menu-link">Custo Medida</a></li>
+            <li><a href="fisica.html" class="menu-link">Fórmulas Física</a></li>
+            <li><a href="#" class="menu-link">Conversor Unidades</a></li>
+            <li><a href="#" class="menu-link">Conversor Moedas</a></li>
+            <li><a href="#" class="menu-link">Cálculo IMC</a></li>
+        </ul>
+    </div>
+
+  <main class="contain main-content">
+    <h1>Calculadora de custo de combustivel</h1>
+    <form id="calc-form">
+        <div class="campo-entrada">
+            <label for="distancia">Distância percorrida (kl)</label>
+            <input id="distancia" type="number" required>
+        </div>
+        <div class="campo-entrada">
+            <label for="consumo-veiculo">Consumo do veiculo (L/Kl)</label>
+            <input id="consumo-vaiculo" type="number" required>
+        </div>
+        <div class="campo-entrada">
+            <label for="preco-combustivel">Preço do combustivel</label>
+            <input id="preco-combustivel" type="number" required>
+        </div>
+        <button type="submit" class="btn">Calcular</button>
+    </form>
+    <div id="result-combustivel" aria-live="polite"></div>
+  </main>
+
+    <script src="./js/common.js" defer></script>
+    <script src="./js/combustivel.js" defer></script>
+</body>
+</html>
