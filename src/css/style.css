@@ -1,10 +1,10 @@
 /* src/css/style.css */
 :root {
-  --color-bg: #21222C;
-  --color-header: #282A36;
+  --color-bg: #1D246B;
+  --color-header: #39306c;
   --color-text: #EDEAEA;
   --color-primary: #6272A4;
-  --color-accent: #E561F7;
+  --color-accent: #927ffb;
   --color-button-hover: #7080C0;
 }
 
@@ -17,10 +17,10 @@
 }
 
 body {
-  font-family: Arial, sans-serif;
-  background: var(--color-bg);
-  color: var(--color-text);
-  min-height: 100vh;
+    background: var(--color-bg);
+    font-family: Arial, sans-serif;
+    color: var(--color-text);
+    min-height: 100vh;
 }
 
 .container {
