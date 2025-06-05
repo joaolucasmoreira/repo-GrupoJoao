@@ -15,10 +15,10 @@
 }
 
 body {
-  font-family: Arial, sans-serif;
-  background: var(--color-bg);
-  color: var(--color-text);
-  min-height: 100vh;
+    background: var(--color-bg);
+    font-family: Arial, sans-serif;
+    color: var(--color-text);
+    min-height: 100vh;
 }
 
 .container {
